@@ -1,0 +1,274 @@
+body {
+  font-family: Source Code Pro;
+  color: black;
+}
+
+h1{
+  font-size: 4em;
+  color:deeppink
+}
+
+h2{
+  font-size:2.2em;
+}
+
+h3{
+  font-size: 5em;
+  font-weight:900;
+/* -webkit-text-stroke:0.0001px white; */
+  padding-top: 0;
+}
+
+p{
+font-size: 1.2em;
+}
+
+nav {
+  background: white;
+  height: 7em;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 0.5em;
+}
+
+.logo {
+  /* position: absolute; */
+  Float: left;
+  width: 170px;
+  /* max-width: 100px; */
+  padding-left: 55px;
+  padding-top:1px;
+}
+
+.nav-mid {
+  position: relative;
+  text-align: center;
+  font-size: 1.5em;
+  padding-top: 1.8em;
+}
+
+.contact {
+display: inline-;
+ position: relative;
+  float:right;
+  clear:right;
+}
+
+
+main {
+}
+
+.project-showcase{
+position:relative;
+clear:both;
+
+}
+
+.projects{
+  position: absolute;
+  margin-left: 0%;
+  width: 97.6%;
+  height: 700px;
+  min-width:1000px;
+  object-fit: cover; 
+  /* object-position: center; */
+}
+
+.spacer{
+  position: relative;
+  width: auto;
+  height: 700px;
+}
+
+.about{
+  background: lightgray;
+  display:flex;
+  position: relative;
+}
+
+.portrait{
+  order:1;
+  width:30%;
+  padding: 20px;
+  object-fit: cover;
+}
+
+.intro{
+  order:2;
+  padding: 20px;
+  padding-top: 4%;
+}
+
+.gap-20 { 
+  width:100%; 
+  height:20px; 
+} 
+
+.skills{
+  display: flex;
+  position:relative;
+  padding-left: 0;
+  margin-left: 0;
+  clear:both;
+}
+
+.Media{
+  width:30%;
+  object-fit: cover;
+  position: relative;
+}
+
+.Hardware{
+  width:40%;
+  object-fit: cover;
+  position: relative;
+}
+
+.Design{
+  width: 30%;
+  object-fit: cover;
+  position: relative;
+}
+
+.Creative_Media{
+  display: inline-block;
+  position: absolute;
+  color:red;
+left:2%
+}
+
+.HardwareManufacturing{
+  display: inline-block;
+  position: absolute;
+  color:deeppink;
+  left:32%
+}
+
+.DesignGraphics{
+  display: inline-block;
+  position: absolute;
+  color:blue;
+  left:72%
+}
+
+
+
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+.contact_box {
+  border-radius: 5px;
+  background-color: white;
+float: right;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: left;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+.col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* @media (width < 700px) {
+  .menu {
+    width: 6%;
+  }
+
+  nav {
+    height: 2em;
+  }
+
+  .nav-right {
+    font-size: 1.5em;
+  }
+
+  .logo {
+    width: 50%;
+  }
+
+  .starred {
+    font-size: 1.5em;
+    column-count: 2;
+    column-gap: 0;
+  }
+
+  footer {
+    height: 7em;
+  }
+
+  .footer-links {
+    font-size: 1em;
+    column-count: 3;
+  }
+}
+
+@media (width > 1080px) and (height < 750px) {
+  .logo {
+    width: 20%;
+  }
+
+  .starred { 
+    font-size: 2em;
+    column-count: 3; 
+    column-gap: 0;
+  } 
+
+  footer {
+    position: relative;
+    height: 6em;
+  }
+} */
