@@ -13,11 +13,16 @@ h2{
 }
 
 h3{
-  font-size: 5em;
+  font-size: 4em;
   font-weight:900;
 /* -webkit-text-stroke:0.0001px white; */
   padding-top: 0;
   line-height: 5px;
+}
+
+h4{
+  font-size: 3em;
+  color:lightslategray;
 }
 
 p{
@@ -74,7 +79,7 @@ clear:both;
   padding-left: 0%;
   margin-left: 0%;
   width: 97.6%;
-  height: 900px;
+  height: 1000px;
   min-width:1000px;
   object-fit: cover; 
   /* object-position: center; */
@@ -83,7 +88,7 @@ clear:both;
 .spacer{
   position: relative;
   width: auto;
-  height: 900px;
+  height: 1000px;
 }
 
 .about{
@@ -94,8 +99,9 @@ clear:both;
 
 .portrait{
   order:1;
-  width:45%;
-  padding: 20px;
+  width:39.4%;
+  padding: 0.8%;
+  padding-left: 0;
   object-fit: cover;
 }
 
@@ -110,35 +116,47 @@ clear:both;
   height:20px; 
 } 
 
-.skills{
+
+.pink{
+  background-color: #ffe1ec;
   display: flex;
   position:relative;
-  padding-left: 0;
-  padding-bottom: 0;
-  margin-left: 0;
+  padding-left: 0%;
+  padding: 0%;
+  margin: 0%;
   clear:both;
-  resize:horizontal;
+}
+.Hardware{
+  width:30%;
+  object-fit: cover;
+  position: relative;
 }
 
+.HardwareManufacturing{
+  display: inline-block;
+  position: absolute;
+  color:deeppink;
+  left:2%
+}
+
+.HardwareSkills{
+  padding-top: 0%;
+  padding-left: 2%;
+}
+
+.red{
+  background-color: #ffdfd4;
+  display: flex;
+  position:relative;
+  padding-left: 0%;
+  padding: 0%;
+  margin: 0%;
+  clear:both;
+}
 .Media{
   width:30%;
   object-fit: cover;
   position: relative;
-  resize:horizontal;
-}
-
-.Hardware{
-  width:40%;
-  object-fit: cover;
-  position: relative;
-  resize:horizontal;
-}
-
-.Design{
-  width: 30%;
-  object-fit: cover;
-  position: relative;
-  resize:horizontal;
 }
 
 .Creative_Media{
@@ -148,18 +166,36 @@ clear:both;
 left:2%
 }
 
-.HardwareManufacturing{
-  display: inline-block;
-  position: absolute;
-  color:deeppink;
-  left:32%
+.MediaSkills{
+  padding-top: 0%;
+  padding-left: 2%;
+}
+
+.blue{
+  background-color: #e8d8ff;
+  display: flex;
+  position:relative;
+  padding-left: 0%;
+  padding: 0%;
+  margin: 0%;
+  clear:both;
+}
+.Design{
+  width: 30%;
+  object-fit: cover;
+  position: relative;
 }
 
 .DesignGraphics{
   display: inline-block;
   position: absolute;
   color:blue;
-  left:72%
+  left:2%
+}
+
+.DesignSkills{
+  padding-top: 0%;
+  padding-left: 2%;
 }
 
 
@@ -170,7 +206,7 @@ left:2%
 .contact_box {
   border-radius: 5px;
   background-color: black;
-  padding:0%;
+  padding:1%;
   margin-top: 0;
 }
 
@@ -189,7 +225,8 @@ left:2%
 
 input[type=text], select, textarea {
   width: 100%;
-  padding: 12px;
+  height: 3em%;
+  padding: 5px;
   background-color: black;
   border: 1px solid deeppink;
   border-radius: 4px;
@@ -212,70 +249,45 @@ input[type=submit]:hover {
 }
 
 
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-.col-75, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
+
+@media (width < 1660px) {
+  h1{
+    font-size: 4em;
+}
+h3{
+  font-size: 3em;
 }
 
-
-
-
-
-
-
-
-
-
-
-/* @media (width < 700px) {
-  .menu {
-    width: 6%;
-  }
-
-  nav {
-    height: 2em;
-  }
-
-  .nav-right {
-    font-size: 1.5em;
-  }
-
-  .logo {
-    width: 50%;
-  }
-
-  .starred {
-    font-size: 1.5em;
-    column-count: 2;
-    column-gap: 0;
-  }
-
-  footer {
-    height: 7em;
-  }
-
-  .footer-links {
-    font-size: 1em;
-    column-count: 3;
-  }
+@media (width < 1000px) {
+  h1{
+    font-size: 3em;
+}
+h3{
+  font-size: 1.5em;
 }
 
-@media (width > 1080px) and (height < 750px) {
-  .logo {
-    width: 20%;
-  }
-
-  .starred { 
+h4{
     font-size: 2em;
-    column-count: 3; 
-    column-gap: 0;
-  } 
+  }
+}
 
-  footer {
-    position: relative;
-    height: 6em;
+.projects{
+  height: 1200px;
+  min-width:1000px;
+}
+
+.spacer{
+  height: 1200px;
+}
+}
+/* 
+@media (width > 2000px) and (height < 750px) {
+  .projects{
+    height: 1500px;
+    min-width:1000px;
+  }
+  
+  .spacer{
+    height: 1500px;
   }
 } */
