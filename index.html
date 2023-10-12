@@ -37,23 +37,8 @@
 <!-- <script type="text/javascript" src=""js/custom.js"></script> -->
       <main>
         <ul class="project-showcase">
-          <?php
-function getRandomImage() {
-    $imageDirectory = "./Projects/"; // Replace with the actual directory path
-
-    $images = glob($imageDirectory . "*.jpg"); // Get a list of all .jpg files in the directory
-
-    if (empty($images)) {
-        return "no_image.jpg"; // Default image to display if no images are found
-    }
-
-    // Select a random image from the list
-    $randomImage = $images[array_rand($images)];
-
-    return $randomImage;
-}
-?>
-          <img class="projects" id="projects" src="<?php echo getRandomImage(); ?>" alt="Random Image">
+          <img class="projects" id="projects"
+          src="./Projects/2.jpg"</img>
 
         </ul> 
         <div class="spacer"></div> 
