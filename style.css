@@ -1,6 +1,10 @@
 body {
   font-family: Source Code Pro;
   color: black;
+  padding:0;
+  border:0;
+  margin:0;
+  background-color: white;
 }
 
 h1{
@@ -70,16 +74,18 @@ main {
 .project-showcase{
 position:relative;
 clear:both;
-
+background-color: white;
+padding-left: 0;
+margin-left: 0;
 }
 
 .projects{
   position: absolute;
   padding-top: 10px;
-  padding-left: 0%;
-  margin-left: 0%;
-  width: 97.6%;
-  height: 1000px;
+  padding-left: 0;
+  margin-left: 0;
+  width: 100vw;
+  height: 80vh;
   min-width:1000px;
   object-fit: cover; 
   /* object-position: center; */
@@ -87,8 +93,8 @@ clear:both;
 
 .spacer{
   position: relative;
-  width: auto;
-  height: 1000px;
+  width: 100vw;
+  height: 80vh;
 }
 
 .about{
@@ -204,7 +210,6 @@ left:2%
   box-sizing: border-box;
 }
 .contact_box {
-  border-radius: 5px;
   background-color: black;
   padding:1%;
   margin-top: 0;
@@ -225,7 +230,7 @@ left:2%
 
 input[type=text], select, textarea {
   width: 100%;
-  height: 3em%;
+  height: 3em;
   padding: 5px;
   background-color: black;
   border: 1px solid deeppink;
@@ -239,7 +244,6 @@ input[type=submit] {
   color: black;
   padding: 12px 20px;
   border: none;
-  border-radius: 4px;
   cursor: pointer;
   float: left;
 }
@@ -271,15 +275,7 @@ h4{
   }
 }
 
-.projects{
-  height: 1200px;
-  min-width:1000px;
-}
 
-.spacer{
-  height: 1200px;
-}
-}
 /* 
 @media (width > 2000px) and (height < 750px) {
   .projects{
