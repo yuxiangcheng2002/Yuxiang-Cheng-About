@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source Code Pro">
+  </head>
+ 
+
+  <body>
+    <nav>
+        <img class="logo"
+          src="LOGO.png"></img>
+
+      <ul class="nav-mid">
+      <li>About</li>
+      <li>Art</li>
+      <li>Design</li>
+      <li>Photography</li>
+      </ul>
+      
+      <!-- <ul class="nav-contact">
+      <img class="contact"
+      src="contact.png"></img>
+      </ul> -->
+
+    </nav>
+
+<script type="text/javascript" src=""js/custom.js"></script>
+      <main>
+        <ul class="project-showcase">
+          <img class="projects" id="projects"
+          src="./Projects/image2.jpg"</img>
+
+        </ul> 
+        <div class="spacer"></div> 
+        
+
+
+
+
+
+      <ul class="about"> 
+        <img class="portrait"
+        src="./Portraits/SDIM3074.jpg"></img>
+        <div class="intro">
+        <h1>Yuxiang,Cheng</h1>
+        <h2>Hardware Maker/Hacker, Designer/Fabricator, Media Artist/Critic, Fingerstyle Guitarist</h2>
+        <div class="gap-20"></div>
+        <p>I am a creative technologist pursuing my studies in Interactive Media Art at NYU. My specialization lies in the design and fabrication of electronic hardware and tangible interactions. In my earlier years, I trained to become an industrial designer. Recently, I have been honing my skills and fostering a passion for music technology, media arts, analog photography, and various forms of design.</p>
+        <p>I also have academic pursuits of art/cultural criticism and philosophy.</p>
+        <p>I work after dinner and criticise in the morning.</p>
+      </div>
+      </ul>
+
+      <ul class="skills">
+      <img class="Media"
+      src="./Skills/Media.png"></img>
+
+      <img class="Hardware"
+      src="./Skills/Hardware.png"></img>
+
+      <img class="Design"
+      src="./Skills/Design.png"></img>
+              
+      <div class="Creative_Media">
+        <h3>Creative</h3>      
+        <h3>Media</h3>
+       </div>
+      <div class="HardwareManufacturing">
+        <h3>Hardware</h3>
+        <h3>Fabrication</h3>
+       </div>
+      <div class="DesignGraphics">
+      <h3>Design</h3>
+      <h3>Graphics</h3>
+       </div>
+
+    </ul>
+    </main>
+
+
+    <div class="contact_box">
+      <form action="/action_page.php">
+      <div class="row">
+    
+        <div class="col-75">
+          <input type="text" id="name" name="name" placeholder="Your name..">
+        </div>
+      </div>
+      <div class="row">
+    
+        <div class="col-75">
+          <input type="text" id="email" name="email" placeholder="Your email..">
+        </div>
+      </div>
+      
+      
+      <div class="row">
+        <div class="col-75">
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <input type="submit" value="Submit">
+      </div>
+      </form>
+    </div>
+    
+  
+  
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    
+    <script src="" async defer></script>
+  </body>
+</html>
