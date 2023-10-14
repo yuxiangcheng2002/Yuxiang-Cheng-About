@@ -17,16 +17,22 @@ h2{
 }
 
 h3{
-  font-size: 4em;
+  font-size: 3em;
   font-weight:900;
 /* -webkit-text-stroke:0.0001px white; */
   padding-top: 0;
   line-height: 5px;
+  transition: 0.5s;
+  transition-timing-function: ease;
 }
 
 h4{
   font-size: 3em;
-  color:lightslategray;
+  color:white;
+  opacity: 100;
+  padding-top: 20%;
+  transition: 2s;
+  transition-timing-function: ease;
 }
 
 p{
@@ -65,10 +71,6 @@ display: inline-;
  position: relative;
   float:right;
   clear:right;
-}
-
-
-main {
 }
 
 .project-showcase{
@@ -123,87 +125,107 @@ margin-left: 0;
 } 
 
 
-.pink{
-  background-color: #ffe1ec;
+.skills{
   display: flex;
   position:relative;
-  padding-left: 0%;
-  padding: 0%;
-  margin: 0%;
+  padding-left: 0;
+  padding-bottom: 0;
+  margin-left: 0;
   clear:both;
 }
-.Hardware{
-  width:30%;
-  object-fit: cover;
+
+.accord{
   position: relative;
+  display: block;
+  transition: 1s;
+  transition-timing-function: ease;
 }
 
-.HardwareManufacturing{
-  display: inline-block;
+.skills:hover .accord{
+  width: 33.3%;
+}
+
+.skills:hover .accord:hover {
+  width: 100%;
+}
+
+.skills:hover .accord:hover img {
+  filter: saturate(3);
+}
+
+.skills:hover .accord:hover .skill-description {
+  opacity: 1;
+}
+/* .skills:hover h3{
+  font-size: 2em;
+} */
+
+.skills:hover .red:hover h3{
+ font-size:5em;
+ color:white;
+}
+
+.skills:hover .pink:hover h3{
+  font-size:5em;
+  color:white;
+ }
+
+ .skills:hover .blue:hover h3{
+  font-size:5em;
+  color:white;
+ }
+
+.skill-title{
   position: absolute;
-  color:deeppink;
-  left:2%
-}
-
-.HardwareSkills{
-  padding-top: 0%;
   padding-left: 2%;
+  top: 0;
+  left: 0;
 }
 
-.red{
-  background-color: #ffdfd4;
-  display: flex;
-  position:relative;
-  padding-left: 0%;
-  padding: 0%;
-  margin: 0%;
-  clear:both;
+.skill-description{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 1em;
+  opacity: 0;
+  transition: 0.5s;
+  transition
 }
+
 .Media{
-  width:30%;
+  width:100%;
+  height:100vh;
   object-fit: cover;
   position: relative;
 }
 
 .Creative_Media{
-  display: inline-block;
-  position: absolute;
   color:red;
-left:2%
 }
-
 .MediaSkills{
-  padding-top: 0%;
-  padding-left: 2%;
+  position: absolute;
 }
 
-.blue{
-  background-color: #e8d8ff;
-  display: flex;
-  position:relative;
-  padding-left: 0%;
-  padding: 0%;
-  margin: 0%;
-  clear:both;
-}
-.Design{
-  width: 30%;
+.Hardware{
+  width:100%;
+  height:100vh;
   object-fit: cover;
   position: relative;
 }
+.HardwareManufacturing{
+  color:deeppink;
+}
 
+.Design{
+  width:100%;
+  height:100vh;
+  object-fit: cover;
+  position: relative;
+}
 .DesignGraphics{
-  display: inline-block;
-  position: absolute;
   color:blue;
-  left:2%
 }
-
-.DesignSkills{
-  padding-top: 0%;
-  padding-left: 2%;
-}
-
+ 
 
 
 * {
@@ -276,14 +298,16 @@ h4{
 }
 
 
-/* 
-@media (width > 2000px) and (height < 750px) {
-  .projects{
-    height: 1500px;
-    min-width:1000px;
-  }
-  
-  .spacer{
-    height: 1500px;
-  }
-} */
+
+
+
+
+li>p{
+  opacity: 0;
+}
+
+ul:hover li:hover{
+  width: 20%;
+  background:black;
+}
+
